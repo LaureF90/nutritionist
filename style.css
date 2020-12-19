@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.container p {
+
+
+}
+
+.testimonials   {
+    width: 33%;
+        
+}
+
+h2 {
+    text-align: center;
+}
