@@ -1,0 +1,62 @@
+*{
+    font-family: Arial, Helvetica, sans-serif; font-size: 18px;
+}
+ 
+ /*--------Top navigation menu-----------------*/
+ .topnav-contact {
+    overflow: hidden;
+     padding: 10px 10px 10px 10px; /*Etre éloigné du bord de la page*/
+     display: block;
+     background-color: lightskyblue;
+   }
+   .topnav-menu {
+     text-align: center;
+     padding: 20px 20px;
+     list-style-type: none; /*enlever les bullets points*/
+     background-color: lightskyblue;
+     display: flex;
+     justify-content: center;
+   }
+
+   .topnav-link { /* Pour éloigner les mots les uns des autres, ce qui est de la mise en page des mots dans la box*/
+     text-align: center;
+     padding: 20px;
+     text-decoration: none; /*enlever le surlignage*/
+     font-size: 17px;
+     background-color: lightskyblue
+   }
+   li a:hover {
+     color: lightslategray;
+   }
+
+    /*--------Big image on homepage-----------------*/
+
+  .background-image {
+   display: flex;
+   justify-content: center;
+  }
+  
+  .textonimage {
+    position: absolute; /* texte sur l'image */
+    top: 35%;
+    width: 100%;
+    color: rgb(11, 11, 95);
+    text-align: center;
+    font-size: 40px;
+  }
+
+  /* 3 paragraphs */
+
+    #threeparagraphsparent {
+   display: flex;
+    justify-content: center; 
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .threeparagraphs {
+    width: 400px;
+    background-color: lightyellow;
+    text-align: left;
+    
+  }
