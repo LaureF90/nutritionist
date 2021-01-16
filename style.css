@@ -1,4 +1,31 @@
- /*--------General styles for all the website-----------------*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightskyblue;
+    text-align: center;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .logos {
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
+      margin-top: 18px;
+  }
+
+  body {
+      margin: 0;
+  }
+
+/*--------General styles for all the website-----------------*/
  h1 {
     font-family: Calibri, sans-serif;
     font-size: 28px;
@@ -196,6 +223,4 @@ body {
   .list-about {
     margin-left: 20px;
     list-style-type: none;
- }
-
-
+ 
