@@ -1,4 +1,6 @@
- /*--------General styles for all the website-----------------*/
+
+
+/*--------General styles for all the website-----------------*/
  h1 {
     font-family: Calibri, sans-serif;
     font-size: 28px;
@@ -24,6 +26,9 @@ h3 {
 p {
     font-family: Calibri, sans-serif;
     font-size: 16px;  
+   /* padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;*/
 }
 
 * {
@@ -50,6 +55,7 @@ body {
   .button:hover {
     background-color: white;
   }
+
 
 
  /*--------Top navigation menu-----------------*/
@@ -96,6 +102,7 @@ body {
         justify-content: center;
     }
 } 
+
     /*--------Big image on homepage-----------------*/
 
   .background-image {
@@ -148,8 +155,6 @@ body {
   }
   .threeparagraphs a {
     width: 40%;
-  
-    
   }
 
 
@@ -198,6 +203,7 @@ body {
     text-align: center;
 }
 
+
 @media screen and (max-width:850px) {
   .container {
     flex-wrap: wrap;
@@ -215,3 +221,53 @@ body {
     width: 50%; 
   }
 }
+
+  /* ABOUT PAGE */
+
+  .sarahimage-parent {
+    display: flex;  
+  }
+
+  .sarahimage {
+    border-radius: 30% 50%;
+    border: 3px solid #9bcdcc;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #9bcdcc;
+  }
+
+  .list-about {
+    margin-left: 20px;
+    list-style-type: none;
+  
+   /* Footer */
+      
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+   background-color: lightskyeblue;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .logos {
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
+      margin-top: 18px;
+  }
+
+  body {
+      margin: 0;
+  }
+ 
