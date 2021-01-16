@@ -195,6 +195,16 @@ body {
     display: flex;  
   }
 
+  .sarahimage {
+    border-radius: 30% 50%;
+    border: 3px solid #9bcdcc;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #9bcdcc;
+  }
+
   .list-about {
     margin-left: 20px;
     list-style-type: none;
