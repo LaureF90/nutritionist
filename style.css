@@ -6,6 +6,7 @@
     font-size: 28px;
     font-weight: bold;
     color: #64b961;
+    padding: 20px;
     
 }
 
@@ -26,9 +27,10 @@ h3 {
 p {
     font-family: Calibri, sans-serif;
     font-size: 16px;  
-    padding-left: 40px;
+   padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+    /* width: 90%; */
 }
 
 * {
@@ -60,8 +62,8 @@ body {
 
  /*--------Top navigation menu-----------------*/
  .topnav-contact {
-    overflow: hidden;
-    padding: 10px 10px 10px 10px; /*Etre éloigné du bord de la page*/
+    /* overflow: hidden; */
+    padding: 30px 20px 30px 20px; /*Etre éloigné du bord de la page */
     display: flex;
     background-color: #ffffff;
    }
@@ -71,7 +73,7 @@ body {
      list-style-type: none; /*enlever les bullets points*/
      background-color: #ffffff;
      display: flex;
-     flex-wrap: wrap;
+     /* flex-wrap: wrap; */
      align-items: center;
      justify-content: center;
      margin: auto;
@@ -91,16 +93,16 @@ body {
      color: lightslategray;
    }
 
-   @media screen and (max-width: 400px){ /*not working*/
-    .topnav-menu {
-        text-align: center;
-        /*padding: 20px 20px;*/
-        list-style-type: none; /*enlever les bullets points*/
-        background-color: #681919;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+   @media screen and (max-width: 850px){ /*not working*/
+    .topnav-contact {
+      left: 5px;
+      float: none;
+      flex-wrap: wrap;
+    } 
+
+    .ul.topnav-menu {
+      flex-wrap: wrap;
+    } 
 } 
 
     /*--------Big image on homepage-----------------*/
@@ -137,7 +139,7 @@ body {
     justify-content: space-around;
     justify-content: flex-start;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align:center;
     align-items: center;
@@ -154,7 +156,7 @@ body {
 
   }
   .threeparagraphs a {
-    width: 40%;
+    width: 20%;
   }
 
 
@@ -166,7 +168,7 @@ body {
     justify-content: space-around;
     justify-content: center;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
     text-align:center;
     margin: auto;
 }
@@ -211,21 +213,22 @@ body {
   #padding {
     padding: 40px 0px;
   }
-  .testimonials p {
+  /* .testimonials p {
     width: 50%; 
-  }
+  } */
   #threeparagraphsparent {
     flex-wrap: wrap;
   }
-  .threeparagraphs p {
+  /* .threeparagraphs p {
     width: 50%; 
-  }
+  } */
 }
 
   /* ABOUT PAGE */
 
   .sarahimage-parent {
     display: flex;  
+    width: 80%;
   }
 
   .sarahimage {
@@ -239,8 +242,9 @@ body {
   }
 
   .list-about {
-    margin-left: 20px;
+    
     list-style-type: none;
+   
   
    /* Footer */
       
