@@ -100,7 +100,7 @@ body {
      color: lightslategray;
    }
 
-   @media screen and (max-width: 850px){ /*not working*/
+   @media screen and (max-width: 650px){ /*not working*/
     .topnav-contact {
       left: 5px;
       float: none;
