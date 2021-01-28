@@ -301,6 +301,7 @@ body {
   .sarahimage-parent {
     display: flex;  
     width: 80%;
+    margin:auto;
   }
 
   .sarahimage {
@@ -315,8 +316,20 @@ body {
 
   .list-about {  
     list-style-type: none;
+    padding: 0px;
   }
   
+  .education {
+  margin: auto;
+  width: 80%;
+  }
+
+  @media screen and (max-width:599px) {
+    .sarahimage-parent {
+    flex-wrap: wrap;
+    }
+  } 
+
   /* CONTACT PAGE*/
 
   .flexconcal {
@@ -351,7 +364,7 @@ body {
 
   footer {
     display: flex;
-    justify-content: space-around;s
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100%;
