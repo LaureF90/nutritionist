@@ -5,6 +5,7 @@
     font-family: Calibri, sans-serif;
     font-size: 28px;
     font-weight: bold;
+    text-align: center;
     color: #64b961;
     padding: 20px;
     
@@ -29,6 +30,12 @@ h4 {
   font-size: 50px;
   font-style: Bold;
   color: black;
+}
+
+h5 {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 16px;
+background-color: lightgray;
 }
 
 p {
@@ -329,6 +336,11 @@ body {
     }
   } 
 
+  #FAQ {
+    background-color: lightgray;
+    margin: 70px;
+  }
+
   /* CONTACT PAGE*/
 
   .flexconcal {
@@ -364,7 +376,7 @@ body {
   footer {
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -383,11 +395,19 @@ body {
   }
 
   .logos {
-      display: flex;
-      justify-content: center;
-      align-content: space-between;
-      margin-top: 18px;
+    display: block;
+    width: 20%;
+    margin: auto;
+    color: #7bb4be;
+    background-color: #ffffff;
   }
+
+  .fa{
+    color: #7bb4be;
+    font-size: 50px;
+    background-color: #ffffff
+}
+
 
   body {
       margin: 0;
