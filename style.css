@@ -92,7 +92,7 @@ body {
      text-align: center;
      padding: 30px;
      text-decoration: none; /*enlever le surlignage*/
-     font-size: 17px;
+     font-size: 20px;
      background-color: #ffffff;
      color: #7bb4be;
      font-family: Calibri, sans-serif;
@@ -176,7 +176,6 @@ body {
     width:  200px;
     height: 200px;
     object-fit: cover;
-    object-fit: scale-down;
     overflow: hidden;
     border-radius: 30% 50%;
     border: 3px solid #9bcdcc;
@@ -424,3 +423,153 @@ body {
     justify-content: center;
   }
 
+/*Recipes Page*/
+
+.recipecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.recipetitle {
+  font-size:x-large;
+  font-weight:bold;
+  text-align: center;
+  height: 56px;
+  width: 90%;
+}
+    
+#recipeheading {
+  font-family: Calibri, sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #7bb4be;
+  padding: 20px;
+}
+
+.recipeparagraph  {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;  
+  padding-right: 20px;
+  text-align:left;
+}
+
+#recipeparagraph {
+  font-family: Calibri, sans-serif;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align:left;
+  color: #7bb4be;
+  font-weight: bolder;
+}
+
+#recipeintro {
+  margin: auto;
+  width: 85%;
+}
+
+.recipevideo {
+  overflow:hidden;
+  padding-bottom:75%;
+  position:relative;
+  height:0;
+  width:100%;
+}
+
+.recipevideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.recipevidtitle {
+  width: 500px;
+}
+
+.recipediv {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  object-fit: cover;
+  overflow: visible;
+  width: 48%;
+}
+
+.paragraphcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.recipestuff {
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.pagebody {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:600px) and (max-width:950px) {
+  .recipecontainer {
+    flex-wrap:wrap;
+  } */
+
+  .paragraphcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+  .recipediv {
+    padding: 20px;
+    margin: 50px;
+    width: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .recipecontainer {
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+  .recipediv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paragraphcontainer {
+   display: flex;
+   justify-content: center;
+}
+  .recipevideo {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraphcontainer {
+    margin: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
