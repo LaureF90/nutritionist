@@ -621,15 +621,20 @@ body {
   font-weight: bold;
   margin: 0;
   text-align: left;
+  font-size: large;
 }
 
+.recipevalues {
+  color: #7bb4be;
+  font-weight: bold;
+}
 .pagebody {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width:650px) and (max-width:950px) {
+@media screen and (min-width:650px) and (max-width:1250px) {
   .recipecontainer {
     flex-wrap:wrap;
     margin-right: 0px;
