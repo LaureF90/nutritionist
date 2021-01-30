@@ -6,8 +6,8 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #7bb4be;
-    */color: #64b961;*/
+    color: #a3aa46;
+    /* color: #64b961; */
 
     padding: 20px;
     
@@ -342,7 +342,7 @@ body {
   
   .education {
   margin: auto;
-  width: 50%;
+  width: 60%;
   }
 
   .education li {
