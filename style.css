@@ -3,17 +3,19 @@
 /*--------General styles for all the website-----------------*/
  h1 {
     font-family: Calibri, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #64b961;
+    color: #7bb4be;
+    */color: #64b961;*/
+
     padding: 20px;
     
 }
 
 h2 {
     font-family: Calibri, sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #7bb4be;
 }
@@ -43,9 +45,9 @@ p {
     font-size: 16px;  
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center;
-    /* width: 90%; */
-}
+    text-align:justify;
+/*     width: 90%;
+ */}
 
 * {
 background-color: rgb(250, 245, 181);
@@ -63,7 +65,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Calibri, sans-serif;
     margin-bottom: 20px;
   }
@@ -128,12 +130,13 @@ body {
     position: absolute; /* texte sur l'image */
     margin-top: 250px;
     padding-top: 20px;
-    width: 100%;
+    width: 40%;
     color: #a3aa46;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: Calibri, sans-serif;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    font-weight: bolder;
   }
 
 
@@ -242,7 +245,7 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none; 
-    font-size: 17px;
+    font-size: 20px;
     background-color: #ffffff;
     color: #7bb4be;
     font-family: Calibri, sans-serif;
@@ -306,8 +309,18 @@ body {
 
   .sarahimage-parent {
     display: flex;  
-    width: 80%;
+    width: 70%;
     margin:auto;
+  }
+
+  .sarahimage-parent p {
+    width: 60%;
+    text-align:justify;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;  
+    margin: auto;
+    padding: 30px;
+    /* width: 90%; */
   }
 
   .sarahimage {
@@ -318,6 +331,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #9bcdcc;
+    width: 300px;
+    height: auto;
   }
 
   .list-about {  
@@ -327,14 +342,78 @@ body {
   
   .education {
   margin: auto;
-  width: 80%;
+  width: 50%;
+  }
+
+  .education li {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  #FAQ {
+    background-color: lightgray;
+    margin: 70px;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width:600px) and (max-width:950px) {
+    .sarahimage-parent {
+      flex-wrap: wrap;  
+      width: 80%;
+      margin:auto;
+    }
+    .sarahimage-parent p{
+      text-align:justify;
+      font-family: Calibri, sans-serif;
+      font-size: 16px;  
+      margin: auto;
+      padding: 30px;
+    }
+    .sarahimage {
+      margin: auto;
+    }
+    .education {
+      width: 55%;
+    }
+    #FAQ {
+      width: 55%;
+    }
   }
 
   @media screen and (max-width:599px) {
     .sarahimage-parent {
-    flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-  } 
+  
+    .sarahimage-parent p{
+      width: 90%;
+      text-align:justify;
+      font-family: Calibri, sans-serif;
+      font-size: 16px;  
+      margin: auto;
+      padding: 30px;
+    }
+    .sarahimage {
+      margin-left: 0;
+      margin: auto;
+      width: 75%;
+    }
+    .education {
+      width: 70%;
+    }
+  }
 
   #FAQ {
     background-color: lightgray;
@@ -352,23 +431,38 @@ body {
     text-align:center;
     margin: auto;
     padding:20px 20px 50px;
+    width: 80%;
   }
-  #calendar{
-    padding-top: 45px;
-  }
+
   .mapouter {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.mapouter h2 {
+    font-weight: bolder;
+}
+
+#address {
+  padding: 50px;
+  width: 40%;
+  margin-bottom: 100px;
+}
+
+#address p {
+  text-align: center;
 }
 
  .gmap_canvas {
    align-items: center;
    justify-content: center;
+   padding: 0 50px 50px 50px;
+   width: 36%;
  }
    /* Footer */
       
@@ -426,7 +520,7 @@ body {
   
   
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #7bb4be;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -436,11 +530,7 @@ body {
   
   
   input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  .contact {
-    justify-content: center;
+    background-color: #7bb4be;
   }
 
 /*Recipes Page*/
@@ -465,7 +555,7 @@ body {
     
 #recipeheading {
   font-family: Calibri, sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bolder;
   color: #7bb4be;
   padding: 20px;
@@ -482,7 +572,7 @@ body {
   font-family: Calibri, sans-serif;
   font-size: 22px;
   padding-left: 20px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   text-align:left;
   color: #7bb4be;
   font-weight: bolder;
@@ -511,6 +601,7 @@ body {
 
 .recipevidtitle {
   width: 500px;
+  height: auto;
 }
 
 .recipediv {
@@ -542,10 +633,11 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width:600px) and (max-width:950px) {
+@media screen and (min-width:650px) and (max-width:950px) {
   .recipecontainer {
     flex-wrap:wrap;
-  } */
+    margin-right: 0px;
+  }
 
   .paragraphcontainer {
     display: flex;
@@ -565,15 +657,17 @@ body {
   }
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:649px) {
   .recipecontainer {
     flex-wrap:wrap;
     flex-direction: column;
+    width: auto;
 }
 
   .recipediv {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 
   .paragraphcontainer {
@@ -584,12 +678,343 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .recipevidtitle{
+    width: auto;
+  }
   .paragraphcontainer {
     margin: auto;
+    padding: 10px;
+  }
+
+  .recipetitle {
+    padding: 0px;
   }
 
   iframe {
-    width: 100%;
+    width: 200px;
     height: auto;
   }
 }
+
+
+/*calendar*/
+
+.wrapper {
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "sidebar"
+                       "content";
+  width: auto; /* unnecessary, but let's keep things consistent */
+  height: auto;
+}
+
+@media screen and (min-width: 850px) {
+  .wrapper {
+    grid-template-columns: 200px 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+
+
+
+/* SIDEBAR */
+
+main {
+  grid-area: content;
+  height: auto;
+  border: 3px solid #7bb4be;
+  background-color: 7bb4be;
+  margin: 20px;
+}
+
+sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "logo menu avatar"
+                       "copyright menu avatar";
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  text-align: center;
+}
+.avatar {
+  grid-area: avatar;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.avatar__name {
+  flex: 1;
+  text-align: right;
+  margin-right: 1em;
+}
+.avatar__img > img {
+  display: block;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+.menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  grid-area: logo;
+}
+.menu__text {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  sidebar {
+    grid-template-areas: "logo"
+                         "avatar"
+                         "menu"
+                         "copyright";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr 50px;
+  }
+  
+  .menu {
+    flex-direction: column;
+    align-items: normal;
+    justify-content: flex-start;
+  }
+  .menu__text {
+    display: inline-block;
+  }
+  .avatar {
+    flex-direction: column;
+  }
+  .avatar__name {
+    margin: 1em 0;
+  }
+  .avatar__img > img {
+    border-radius: 50%;
+  }
+}
+
+
+
+/* MAIN */
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.calendar__week,
+.calendar__header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);  
+}
+.calendar__week {
+  grid-auto-rows: 50px;
+  text-align: right;
+}
+
+.calendar__header {
+  grid-auto-rows: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.calendar__day {
+  padding: 16px;
+}
+
+
+
+
+/* COSMETIC STYLING */
+
+:root {
+  --red: #7bb4be;
+}
+
+
+/* sidebar {
+  background-color: white;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
+} */
+
+
+.avatar__name {
+  font-size: 0.8rem;
+}
+
+.menu__item {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 16px 16px 16px 14px;
+  border-left: 4px solid transparent;
+  color: inherit;
+  text-decoration: none;
+  transition: color ease 0.3s;
+}
+
+.menu__item--active .menu__icon {
+  color: var(--red);
+}
+.menu__item--active .menu__text {
+  color: black;
+}
+
+.menu__item:hover {
+  color: black;
+}
+
+
+.menu__icon {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 850px) {
+  .menu__icon {
+    font-size: 0.9rem;
+    padding-right: 16px;
+  }
+  .menu__item--active {
+    border-left: 4px solid var(--red);
+    box-shadow: inset 10px 0px 17px -13px var(--red);
+  }
+}
+
+.copyright {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.calendar {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+}
+
+.calendar__header > div {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.calendar__day {
+  border-right: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+
+.calendar__day:last-child {
+  border-right: 0;
+}
+
+.toggle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  text-align: center;
+  font-size: 0.9em;
+}
+.toggle__option{
+  padding: 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.toggle__option:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.toggle__option:last-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.toggle__option--selected{
+  border-color: white;
+  background-color: white;
+  color: var(--red);
+  font-weight: 500;
+  box-shadow: 1px 2px 30px -5px var(--red);
+}
+
+#contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#messageme {
+  width: 40%;
+  padding-right: 50px;
+}
+
+#calendar {
+  padding-right: 100px;
+}
+
+@media screen and (min-width:650px) and (max-width:950px) {
+  .flexconcal {
+    flex-wrap: wrap;
+  }
+    #calendar {
+    padding: 20px 0px;
+  
+  }
+  #contact {
+    width: 90%;
+  }
+  #messageme {
+    width: 90%;
+    padding-right: 0px;
+  }
+  .mapouter {
+    flex-wrap: wrap;
+  }
+  .gmap_canvas {
+  width: 90%;
+  height: 100px;
+  }
+  #address {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:649px) {
+.flexconcal {
+  flex-wrap: wrap;
+}
+  #calendar {
+  padding: 20px 0px;
+
+}
+#contact {
+  width: 90%;
+}
+#messageme {
+  width: 90%;
+  padding-right: 0px;
+}
+.mapouter {
+  flex-wrap: wrap;
+}
+.gmap_canvas {
+width: 90%;
+height: 100px;
+}
+#address {
+  margin-bottom: 0px;
+}
+}
+
