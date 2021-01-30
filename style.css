@@ -8,7 +8,6 @@
     text-align: center;
     color: #a3aa46;
     /* color: #64b961; */
-
     padding: 20px;
     
 }
@@ -22,21 +21,21 @@ h2 {
 
 h3 {
     font-family: Calibri, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     color: #a3aa46;
 }
 
 h4 {
   font-family: Calibri, sans-serif;
-  font-size: 50px;
+  font-size: 19px;
   font-style: Bold;
   color: black;
 }
 
 h5 {
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 16px;
+font-size: 18px;
 background-color: lightgray;
 }
 
@@ -354,21 +353,23 @@ body {
   .question {
     font-size: 20px;
     font-weight: bold;
+    background-color:  rgb(250, 245, 181);
+
   }
 
 
   #FAQ {
-    background-color: lightgray;
-    margin: 70px;
+    background-color:  rgb(250, 245, 181);
     text-align: center;
     padding: 20px;
     width: 50%;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;  
+    margin-bottom: 80px;
   }
+  
 
-  @media screen and (min-width:600px) and (max-width:950px) {
+  @media screen and (min-width:600px) and (max-width:1000px) {
     .sarahimage-parent {
       flex-wrap: wrap;  
       width: 80%;
@@ -415,10 +416,6 @@ body {
     }
   }
 
-  #FAQ {
-    background-color: lightgray;
-    margin: 70px;
-  }
 
   /* CONTACT PAGE*/
 
@@ -625,15 +622,22 @@ body {
   font-weight: bold;
   margin: 0;
   text-align: left;
+  font-size: large;
 }
 
+.values {
+  color: #7bb4be;
+  font-weight: bold;
+  background-color:  rgb(250, 245, 181);
+
+}
 .pagebody {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width:650px) and (max-width:950px) {
+@media screen and (min-width:650px) and (max-width:1250px) {
   .recipecontainer {
     flex-wrap:wrap;
     margin-right: 0px;
