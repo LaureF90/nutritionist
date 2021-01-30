@@ -371,7 +371,7 @@ body {
   }
   
 
-  @media screen and (min-width:600px) and (max-width:1000px) {
+  @media screen and (min-width:600px) and (max-width:1150px) {
     .sarahimage-parent {
       flex-wrap: wrap;  
       width: 80%;
@@ -970,7 +970,7 @@ sidebar {
   padding-right: 100px;
 }
 
-@media screen and (min-width:650px) and (max-width:950px) {
+@media screen and (min-width:650px) and (max-width:1250px) {
   .flexconcal {
     flex-wrap: wrap;
   }
