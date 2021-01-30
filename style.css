@@ -7,6 +7,8 @@
     font-weight: bold;
     text-align: center;
     color: #7bb4be;
+    */color: #64b961;*/
+
     padding: 20px;
     
 }
@@ -413,6 +415,11 @@ body {
     }
   }
 
+  #FAQ {
+    background-color: lightgray;
+    margin: 70px;
+  }
+
   /* CONTACT PAGE*/
 
   .flexconcal {
@@ -688,6 +695,7 @@ body {
     height: auto;
   }
 }
+
 
 /*calendar*/
 
@@ -1009,3 +1017,4 @@ height: 100px;
   margin-bottom: 0px;
 }
 }
+
