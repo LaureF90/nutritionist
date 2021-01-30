@@ -1,5 +1,5 @@
 function myFunction() {
-  alert("Hello! Welcome to Sarah Clark's Nutrition Website! Here you will find all the help you need for a better way of living! =)");
+  alert("Hello! Welcome to Sarah Clark's Nutrition Website!");
 }
 
 
