@@ -34,7 +34,7 @@ h4 {
 }
 
 h5 {
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: Calibri, sans-serif;
 font-size: 18px;
 background-color: lightgray;
 }
@@ -341,31 +341,33 @@ body {
   
   .education {
   margin: auto;
-  width: 60%;
+  width: 70%;
   }
 
   .education li {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .question {
-    font-size: 20px;
-    font-weight: bold;
+    /* font-size: 20px;
+    font-weight: bold; */
     background-color:  rgb(250, 245, 181);
-
+    padding: 20px;
+    margin: 0px;
   }
 
 
   #FAQ {
     background-color:  rgb(250, 245, 181);
-    text-align: center;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
-    margin-top: 80px;  
-    margin-bottom: 80px;
+    /* text-align: center; */
+    /* padding: 20px;*/
+    list-style-type: none;
+    width: 70%;
+    margin: auto; 
+    /* margin-top: 80px;   */
+    /* margin-bottom: 80px; */
   }
   
 
@@ -626,8 +628,8 @@ body {
 }
 
 .values {
-  color: #7bb4be;
-  font-weight: bold;
+  /* color: #7bb4be; */
+  /* font-weight: bold; */
   background-color:  rgb(250, 245, 181);
 
 }
