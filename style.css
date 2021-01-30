@@ -3,7 +3,7 @@
 /*--------General styles for all the website-----------------*/
  h1 {
     font-family: Calibri, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: #7bb4be;
@@ -13,7 +13,7 @@
 
 h2 {
     font-family: Calibri, sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #7bb4be;
 }
@@ -43,9 +43,9 @@ p {
     font-size: 16px;  
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center;
-    /* width: 90%; */
-}
+    text-align:justify;
+/*     width: 90%;
+ */}
 
 * {
 background-color: rgb(250, 245, 181);
@@ -63,7 +63,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Calibri, sans-serif;
     margin-bottom: 20px;
   }
@@ -128,12 +128,13 @@ body {
     position: absolute; /* texte sur l'image */
     margin-top: 250px;
     padding-top: 20px;
-    width: 100%;
+    width: 40%;
     color: #a3aa46;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: Calibri, sans-serif;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    font-weight: bolder;
   }
 
 
@@ -242,7 +243,7 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none; 
-    font-size: 17px;
+    font-size: 20px;
     background-color: #ffffff;
     color: #7bb4be;
     font-family: Calibri, sans-serif;
@@ -306,8 +307,18 @@ body {
 
   .sarahimage-parent {
     display: flex;  
-    width: 80%;
+    width: 70%;
     margin:auto;
+  }
+
+  .sarahimage-parent p {
+    width: 60%;
+    text-align:justify;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;  
+    margin: auto;
+    padding: 30px;
+    /* width: 90%; */
   }
 
   .sarahimage {
@@ -318,6 +329,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #9bcdcc;
+    width: 300px;
+    height: auto;
   }
 
   .list-about {  
@@ -327,18 +340,77 @@ body {
   
   .education {
   margin: auto;
-  width: 80%;
+  width: 50%;
   }
 
-  @media screen and (max-width:599px) {
-    .sarahimage-parent {
-    flex-wrap: wrap;
-    }
-  } 
+  .education li {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
 
   #FAQ {
     background-color: lightgray;
     margin: 70px;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width:600px) and (max-width:950px) {
+    .sarahimage-parent {
+      flex-wrap: wrap;  
+      width: 80%;
+      margin:auto;
+    }
+    .sarahimage-parent p{
+      text-align:justify;
+      font-family: Calibri, sans-serif;
+      font-size: 16px;  
+      margin: auto;
+      padding: 30px;
+    }
+    .sarahimage {
+      margin: auto;
+    }
+    .education {
+      width: 55%;
+    }
+    #FAQ {
+      width: 55%;
+    }
+  }
+
+  @media screen and (max-width:599px) {
+    .sarahimage-parent {
+      flex-wrap: wrap;
+    }
+  
+    .sarahimage-parent p{
+      width: 90%;
+      text-align:justify;
+      font-family: Calibri, sans-serif;
+      font-size: 16px;  
+      margin: auto;
+      padding: 30px;
+    }
+    .sarahimage {
+      margin-left: 0;
+      margin: auto;
+      width: 75%;
+    }
+    .education {
+      width: 70%;
+    }
   }
 
   /* CONTACT PAGE*/
@@ -373,6 +445,10 @@ body {
   padding: 50px;
   width: 40%;
   margin-bottom: 100px;
+}
+
+#address p {
+  text-align: center;
 }
 
  .gmap_canvas {
@@ -450,10 +526,6 @@ body {
     background-color: #7bb4be;
   }
 
-  .contact {
-    justify-content: center;
-  }
-
 /*Recipes Page*/
 
 .recipecontainer {
@@ -476,7 +548,7 @@ body {
     
 #recipeheading {
   font-family: Calibri, sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bolder;
   color: #7bb4be;
   padding: 20px;
@@ -493,7 +565,7 @@ body {
   font-family: Calibri, sans-serif;
   font-size: 22px;
   padding-left: 20px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   text-align:left;
   color: #7bb4be;
   font-weight: bolder;
@@ -522,6 +594,7 @@ body {
 
 .recipevidtitle {
   width: 500px;
+  height: auto;
 }
 
 .recipediv {
@@ -553,10 +626,11 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width:600px) and (max-width:950px) {
+@media screen and (min-width:650px) and (max-width:950px) {
   .recipecontainer {
     flex-wrap:wrap;
-  } */
+    margin-right: 0px;
+  }
 
   .paragraphcontainer {
     display: flex;
@@ -576,15 +650,17 @@ body {
   }
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:649px) {
   .recipecontainer {
     flex-wrap:wrap;
     flex-direction: column;
+    width: auto;
 }
 
   .recipediv {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 
   .paragraphcontainer {
@@ -595,12 +671,20 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .recipevidtitle{
+    width: auto;
+  }
   .paragraphcontainer {
     margin: auto;
+    padding: 10px;
+  }
+
+  .recipetitle {
+    padding: 0px;
   }
 
   iframe {
-    width: 100%;
+    width: 200px;
     height: auto;
   }
 }
@@ -870,4 +954,58 @@ sidebar {
 
 #calendar {
   padding-right: 100px;
+}
+
+@media screen and (min-width:650px) and (max-width:950px) {
+  .flexconcal {
+    flex-wrap: wrap;
+  }
+    #calendar {
+    padding: 20px 0px;
+  
+  }
+  #contact {
+    width: 90%;
+  }
+  #messageme {
+    width: 90%;
+    padding-right: 0px;
+  }
+  .mapouter {
+    flex-wrap: wrap;
+  }
+  .gmap_canvas {
+  width: 90%;
+  height: 100px;
+  }
+  #address {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:649px) {
+.flexconcal {
+  flex-wrap: wrap;
+}
+  #calendar {
+  padding: 20px 0px;
+
+}
+#contact {
+  width: 90%;
+}
+#messageme {
+  width: 90%;
+  padding-right: 0px;
+}
+.mapouter {
+  flex-wrap: wrap;
+}
+.gmap_canvas {
+width: 90%;
+height: 100px;
+}
+#address {
+  margin-bottom: 0px;
+}
 }
