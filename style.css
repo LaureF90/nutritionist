@@ -22,21 +22,21 @@ h2 {
 
 h3 {
     font-family: Calibri, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     color: #a3aa46;
 }
 
 h4 {
   font-family: Calibri, sans-serif;
-  font-size: 50px;
+  font-size: 19px;
   font-style: Bold;
   color: black;
 }
 
 h5 {
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 16px;
+font-size: 18px;
 background-color: lightgray;
 }
 
@@ -354,11 +354,14 @@ body {
   .question {
     font-size: 20px;
     font-weight: bold;
+    background-color:  rgb(250, 245, 181);
+
   }
 
 
   #FAQ {
-    background-color: lightgray;
+    background-color:  rgb(250, 245, 181);
+    tgray;
     text-align: center;
     padding: 20px;
     width: 50%;
@@ -368,7 +371,7 @@ body {
   }
   
 
-  @media screen and (min-width:600px) and (max-width:950px) {
+  @media screen and (min-width:600px) and (max-width:1000px) {
     .sarahimage-parent {
       flex-wrap: wrap;  
       width: 80%;
@@ -624,9 +627,11 @@ body {
   font-size: large;
 }
 
-.recipevalues {
+.values {
   color: #7bb4be;
   font-weight: bold;
+  background-color:  rgb(250, 245, 181);
+
 }
 .pagebody {
   width: 70%;
